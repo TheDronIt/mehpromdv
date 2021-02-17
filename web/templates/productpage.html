@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Мехпром ДВ | {{productpage.name}}</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/create.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/bootstrap.css' %}">
+	<script src="{% static '/web/js/jQuery.js' %}"></script>
+	<script src="{% static '/web/js/bootstrap.js' %}"></script>
+	<script src="{% static '/web/js/carousel.js' %}"></script>
+
+</head>
+<body>
+{% block content %}
+
+{% include 'header.html' %}
+
+
+<div class="create-productpage-block">
+	<div class="create-title">{{productpage.name}}</div>
+	<div class="create-img" style="background-image: url({{productpage.img.url}});"></div>
+	<div class="create-productpage-text">{{productpage.text|safe}}</div>
+</div>
+
+
+{% include 'footer.html' %}
+	
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Мехпром ДВ</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/create.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/bootstrap.css' %}">
+	<script src="{% static '/web/js/jQuery.js' %}"></script>
+	<script src="{% static '/web/js/bootstrap.js' %}"></script>
+	<script src="{% static '/web/js/carousel.js' %}"></script>
+
+</head>
+<body>
+{% block content %}
+
+{% include 'header.html' %}
+
+
+
+<div class="create-block">
+	<div class="bigheadline">Краны</div>
+	<div class="bigline"></div>
+
+	
+	<div class="headline">Краны  судовые  грузовые</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat11 in cat11 %}
+	<a href="/product/{{cat11.id}}">
+		<div class="create-category-block" style="background-image: url({{cat11.img.url}});">
+			<div class="create-category-text">
+				{{ cat11.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+	
+	<div class="headline">Краны  пирсовые</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat12 in cat12 %}
+	<a href="/product/{{cat12.id}}">
+		<div class="create-category-block" style="background-image: url({{cat12.img.url}});">
+			<div class="create-category-text">
+				{{ cat12.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Кран  съемный  портальный</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat13 in cat13 %}
+	<a href="/product/{{cat13.id}}">
+		<div class="create-category-block" style="background-image: url({{cat13.img.url}});">
+			<div class="create-category-text">
+				{{ cat13.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Кран - балки  грузовые типа КБЭ4М</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat14 in cat14 %}
+	<a href="/product/{{cat14.id}}">
+		<div class="create-category-block" style="background-image: url({{cat14.img.url}});">
+			<div class="create-category-text">
+				{{ cat14.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Краны  грузовые  специальные</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat15 in cat15 %}
+	<a href="/product/{{cat15.id}}">
+		<div class="create-category-block" style="background-image: url({{cat15.img.url}});">
+			<div class="create-category-text">
+				{{ cat15.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Кран  судовой  грузовой  арктический</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat16 in cat16 %}
+	<a href="/product/{{cat16.id}}">
+		<div class="create-category-block" style="background-image: url({{cat16.img.url}});">
+			<div class="create-category-text">
+				{{ cat16.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+</div>
+
+
+
+
+
+<div class="create-block">
+	<div class="bigheadline">Лебедки</div>
+	<div class="bigline"></div>
+
+	<div class="headline">Лебедки судовые грузовые с электрическим приводом переменного тока, напряжением 380 В, малой и средней грузоподъемности
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat21 in cat21 %}
+	<a href="/product/{{cat21.id}}">
+		<div class="create-category-block" style="background-image: url({{cat21.img.url}});">
+			<div class="create-category-text">
+				{{ cat21.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедки судовые  грузовые с электрическим приводом переменного тока, напряжением 380 В, большой грузоподъемности
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat22 in cat22 %}
+	<a href="/product/{{cat22.id}}">
+		<div class="create-category-block" style="background-image: url({{cat22.img.url}});">
+			<div class="create-category-text">
+				{{ cat22.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедки судовые промыслово - грузовые с электрическим приводом, напряжением 380 В, малой грузоподъемности
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat23 in cat23 %}
+	<a href="/product/{{cat23.id}}">
+		<div class="create-category-block" style="background-image: url({{cat23.img.url}});">
+			<div class="create-category-text">
+				{{ cat23.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедка судовая промыслово - грузовая с электрическим приводом, переменного тока, напряжением 380 В, большой грузоподъемности
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat24 in cat24 %}
+	<a href="/product/{{cat24.id}}">
+		<div class="create-category-block" style="background-image: url({{cat24.img.url}});">
+			<div class="create-category-text">
+				{{ cat24.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Вьюшка судовая топенантная с электрическим  приводом переменного тока, напряжением 380 В
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat25 in cat25 %}
+	<a href="/product/{{cat25.id}}">
+		<div class="create-category-block" style="background-image: url({{cat25.img.url}});">
+			<div class="create-category-text">
+				{{ cat25.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедка судовая подъемно - тяговая с электрическим приводом, переменного тока, напряжением 380 В
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat26 in cat26 %}
+	<a href="/product/{{cat26.id}}">
+		<div class="create-category-block" style="background-image: url({{cat26.img.url}});">
+			<div class="create-category-text">
+				{{ cat26.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедка судовая грузовая с электрическим приводом переменного тока, напряжением 380 В
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat27 in cat27 %}
+	<a href="/product/{{cat27.id}}">
+		<div class="create-category-block" style="background-image: url({{cat27.img.url}});">
+			<div class="create-category-text">
+				{{ cat27.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедки гидрологические
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat28 in cat28 %}
+	<a href="/product/{{cat28.id}}">
+		<div class="create-category-block" style="background-image: url({{cat28.img.url}});">
+			<div class="create-category-text">
+				{{ cat28.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Промысловые лебедки и комплексы
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat29 in cat29 %}
+	<a href="/product/{{cat29.id}}">
+		<div class="create-category-block" style="background-image: url({{cat29.img.url}});">
+			<div class="create-category-text">
+				{{ cat29.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедка буксирная автоматическая с электрическим приводом
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat210 in cat210 %}
+	<a href="/product/{{cat210.id}}">
+		<div class="create-category-block" style="background-image: url({{cat210.img.url}});">
+			<div class="create-category-text">
+				{{ cat210.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедка буксирно-технологическая с электрическим приводом
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat211 in cat211 %}
+	<a href="/product/{{cat211.id}}">
+		<div class="create-category-block" style="background-image: url({{cat211.img.url}});">
+			<div class="create-category-text">
+				{{ cat211.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедка  шлюпочная  с  гидравлическим  приводом
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat212 in cat212 %}
+	<a href="/product/{{cat212.id}}">
+		<div class="create-category-block" style="background-image: url({{cat212.img.url}});">
+			<div class="create-category-text">
+				{{ cat212.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+	<!--
+	<div class="headline">Лебедка трелевочная
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat217 in cat217 %}
+	<a href="/product/{{cat217.id}}">
+		<div class="create-category-block" style="background-image: url({{cat217.img.url}});">
+			<div class="create-category-text">
+				{{ cat217.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+	-->
+
+	<div class="headline">Лебедка люкового закрытия с электрическим приводом, переменного тока: 380 В; 220 В
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat218 in cat218 %}
+	<a href="/product/{{cat218.id}}">
+		<div class="create-category-block" style="background-image: url({{cat218.img.url}});">
+			<div class="create-category-text">
+				{{ cat218.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Лебедка траловая с электрическим приводом, переменного тока, напряжением 380 В
+	</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat219 in cat219 %}
+	<a href="/product/{{cat219.id}}">
+		<div class="create-category-block" style="background-image: url({{cat219.img.url}});">
+			<div class="create-category-text">
+				{{ cat219.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	
+
+
+</div>
+
+{% include 'footer.html' %}
+	
+{% endblock %}
+</body>
+</html>

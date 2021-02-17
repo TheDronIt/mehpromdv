@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Mehpromdv | {{newspage.title}}</title>
+	<link rel="stylesheet" type="text/css" href="{%static '/web/css/news.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/bootstrap.css' %}">
+	<script src="{% static '/web/js/jQuery.js' %}"></script>
+	<script src="{% static '/web/js/bootstrap.js' %}"></script>
+	<script src="{% static '/web/js/carousel.js' %}"></script>
+</head>
+<body>
+	{% block content %}
+
+	{% include 'header.html' %}
+	
+	</div>
+	<div class="news-card__block">
+	<a href="/news" style="text-decoration: none;">
+		<div class="news-back">
+			<div class="news-back-tr">
+			</div>
+			<div class="news-back-bl">
+				Вернуться
+			</div>
+		</div>
+	</a>
+		<div class="news-card-title">{{newspage.title}}</div>
+		<div class="news-card-datetime">{{newspage.date}}</div>
+		<div class="news-card-img" style="background-image: url({{newspage.img.url}});"></div>
+		<div class="news-card-text">{{newspage.text|safe}}</div>
+	</div>
+
+	{% include 'footer.html' %}
+
+	{% endblock %}
+</body>
+</html>

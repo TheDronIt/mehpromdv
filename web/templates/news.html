@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+		<title>Мехпром ДВ | Новости</title>
+	<link rel="stylesheet" type="text/css" href="{%static '/web/css/news.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/bootstrap.css' %}">
+	<script src="{% static '/web/js/jQuery.js' %}"></script>
+	<script src="{% static '/web/js/bootstrap.js' %}"></script>
+	<script src="{% static '/web/js/carousel.js' %}"></script>
+</head>
+<body>
+{% block content %}
+
+	{% include 'header.html' %}
+
+
+	<div class="news-block">
+		<div class="headline ">Новости</div>
+		<div class="line"></div>
+		<div class="news-list">
+			{% for news in news %}
+			<div style="margin: auto">
+				<a href="{{news.id}}">
+					<div class=news-list-element style="background-image: url({{news.img.url}});">
+						<div class="news-list-element__block">
+							<div class="news-list__title">{{news.title}}</div>
+							<div class="news-list__text">{{news.text|safe}}</div>
+							<div class="news-list__datetime">{{news.date}}</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	{% include 'footer.html' %}
+	
+{% endblock %}
+</body>
+</html>

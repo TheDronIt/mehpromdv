@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Мехпром ДВ | Связаться</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/contact.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/bootstrap.css' %}">
+	<script src="{% static '/web/js/jQuery.js' %}"></script>
+	<script src="{% static '/web/js/bootstrap.js' %}"></script>
+	<script src="{% static '/web/js/carousel.js' %}"></script>
+</head>
+<body>
+{% block content %}
+
+	{% include 'header.html' %}
+	{% include 'contactinfo.html' %}
+
+	<div class="form">
+		<div class="headline" style="padding-top: 15px">НАПИСАТЬ НАМ</div>
+		<div class="line"></div>
+		<div class=form-block>
+			<form method="POST">
+				<div class="form-error">{{ error }}</div>
+				<div class="form-place">
+					{% csrf_token %}
+					{{ form.FIO }}
+					{{ form.phone }}
+					{{ form.email }}
+					{{ form.text }}
+				</div>
+				<div class="form-button-block">
+					<button type="submit" class="form-button">Отправить</button>
+				</div>	
+			</form>
+		</div>
+	</div>
+
+
+
+	{% include 'footer.html' %}
+
+
+{% endblock %}
+</body>
+</html>

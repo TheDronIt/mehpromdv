@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Мехпром ДВ</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/index.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/bootstrap.css' %}">
+	<script src="{% static '/web/js/jQuery.js' %}"></script>
+	<script src="{% static '/web/js/bootstrap.js' %}"></script>
+	<script src="{% static '/web/js/carousel.js' %}"></script>
+
+</head>
+<body>
+{% block content %}
+
+{% include 'header.html' %}
+
+
+
+<div id="slider-wrap">
+    <div id="active-slide">
+        <div id="slider">
+        	<div class="slide" style="background-image: url({% static '/web/img/carousel/slide1.jpg' %});">
+        		<div class="carousel-big-block">
+        			<div class="carousel-block">
+        				<div></div>
+	        			<div class="carousel-headline">
+	        			Изготовление металлоконструкций<br>в Хабаровске
+	        			</div>
+	        			<div class="carousel-line"></div>
+	        			<div class="carousel-description">Создание металлоконструкций по чертежам заказчика.<br><a style="font-size: 25px; color: lightgray;">*Включая покраску, отделку и монтаж электрооборудования.</a></div>
+	        			<div></div>
+        			</div>
+        		</div>
+        	</div>
+            <div class="slide" style="background-image: url({% static '/web/img/carousel/slide2.jpg' %});">
+        		<div class="carousel-big-block">
+        			<div class="carousel-block">
+	        			<div></div>
+	        			<div class="carousel-headline">
+	        			Судовые<br>лебедки и краны
+	        			</div>
+	        			<div class="carousel-line"></div>
+	        			<div class="carousel-description">Наше предприятие осуществляет продажу специального грузоподъемного и тягового оборудования.</div>
+	        			<div></div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="slide" style="background-image: url({% static '/web/img/carousel/slide3.jpg' %});">
+        		<div class="carousel-big-block">
+        			<div class="carousel-block">
+	        			<div></div>
+	        			<div class="carousel-headline">
+	        			Эжектора
+	        			</div>
+	        			<div class="carousel-line"></div>
+	        			<div class="carousel-description">Производство водоструйных эжекторов разных типов и назначений.</div>
+	        			<div></div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="create" id="create">
+	<div class="headline ">МЫ ПРОИЗВОДИМ</div>
+	<div class="line"></div>
+	<div class="create-panel">
+		
+		<div class="create-card" style="background-image: url({% static '/web/img/card1.jpg' %}); margin: auto;">
+			<a href="/metal" style="text-decoration: none;">
+				<div class="create-card-block">
+					<div></div>
+					<div class="create-card-headline">Изделия из металла</div>
+					<div class="create-card-line"></div>
+					<div class="create-card-description">Производство изделий по вашим чертежам.</div>
+					<div></div>
+				</div>
+			</a>
+		</div>
+	
+		<div class="create-card" style="background-image: url({% static '/web/img/card2.jpg' %});">
+			<a href="/windlass" style="text-decoration: none;">
+				<div class="create-card-block">
+					<div></div>
+					<div class="create-card-headline">Судовые<br>краны и лебедки</div>
+					<div class="create-card-line"></div>
+					<div class="create-card-description">Продажа грузоподъемного и тягового оборудования.</div>
+					<div></div>
+				</div>
+			</a>
+		</div>
+
+		<div class="create-card" style="background-image: url({% static '/web/img/card3.jpg' %});">
+			<a href="/ejector" style="text-decoration: none;">
+				<div class="create-card-block">
+					<div></div>
+					<div class="create-card-headline">Эжектора</div>
+					<div class="create-card-line"></div>
+					<div class="create-card-description">Производство эжекторов под разные типы техники.</div>
+					<div></div>
+				</div>
+			</a>
+		</div>
+	
+	</div>
+</div>
+
+<div class="about" id="about">
+	<div class="headline" style="padding-top: 15px">О НАС</div>
+	<div class="line"></div>
+	<div class="about-text">
+		<a style="font-weight: bold;">ООО «Дальневосточное механообрабатывающее производство» (ООО «Мехпром ДВ»)</a><br>
+		учреждено в 2019 году на базе ПАО «Хабаровский завод им. А.М. Горького» (ПАО «Хабсудмаш») в целях развития гражданского направления, а также реализации функций тендерного подразделения предприятия данной области.<br><br>
+
+		Помимо выполнения механосборочных и сварочных работ, ООО «Мехпром ДВ» является дилером ПАО «Хабсудмаш» в части касающейся реализации широкой номенклатуры судового подьемно-транспортного оборудования (ПТО) и водоструйных эжекторов (ВЭж) гражданского назначения (в том числе с приемкой РМРС). При этом, организация сохраняет ценовую политику предприятия-производителя.
+	</div>
+</div>
+
+<div class="advantages">
+	<div class="headline" style="padding-top: 15px">НАШИ ПРЕИМУЩЕСТВА</div>
+	<div class="line"></div>
+	<div class="advantages-block">
+		<div class="advantages-card">
+			<div class="advantages-card-logo" style="background-image: url({% static '/web/img/prim1.png' %})">
+			</div>
+			<div class="advantages-card-headline">
+				<div>Опыт</div>
+			</div>
+			<div class="advantages-card-text">
+				Мы имеем многолетний опыт работы в сфере производства ПТО и ВЭЖ.
+			</div>
+		</div>
+		<div class="advantages-card">
+			<div class="advantages-card-logo" style="background-image: url({% static '/web/img/prim2.png' %})">
+			</div>
+			<div class="advantages-card-headline">
+				<div>Конструкторский отдел</div>
+			</div>
+			<div class="advantages-card-text">
+				В наличии у нас имеется конструкторский отдел.
+			</div>
+		</div>
+		<div class="advantages-card">
+			<div class="advantages-card-logo" style="background-image: url({% static '/web/img/prim3.png' %})">
+			</div>
+			<div class="advantages-card-headline">
+				<div>Изделия по образцу</div>
+			</div>
+			<div class="advantages-card-text">
+				Мы можем изготавливать различные изделия по образу, напирмер зубчатые пары, шестерни, и т.д.
+			</div>
+		</div>
+		<div class="advantages-card">
+			<div class="advantages-card-logo" style="background-image: url({% static '/web/img/prim4.png' %})">
+			</div>
+			<div class="advantages-card-headline">
+				<div>Расположение</div>
+			</div>
+			<div class="advantages-card-text">
+				Мы распологаемся в черте города, а значит, вам будет комфортнее добраться до нас.
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 
+<div class="statistic">
+	<div class="statistic-number">
+		10
+	</div>
+	<div class="statistic-number">
+		100
+	</div>
+	<div class="statistic-number">
+		500
+	</div>
+	<div class="statistic-word">
+		Лет
+	</div>
+	<div class="statistic-word">
+		Сотрудников
+	</div>
+	<div class="statistic-word">
+		Выполненных работ
+	</div>
+</div>
+-->
+
+{% include 'contactinfo.html' %}
+{% include 'footer.html' %}
+	
+{% endblock %}
+</body>
+</html>

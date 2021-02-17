@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Мехпром ДВ</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/create.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/bootstrap.css' %}">
+	<script src="{% static '/web/js/jQuery.js' %}"></script>
+	<script src="{% static '/web/js/bootstrap.js' %}"></script>
+	<script src="{% static '/web/js/carousel.js' %}"></script>
+
+</head>
+<body>
+{% block content %}
+
+{% include 'header.html' %}
+
+<div class="create-block">
+	<div class="bigheadline">Эжектора</div>
+	<div class="bigline"></div>
+
+	
+	<div class="headline">Эжекторы водоструйные стационарные с фланцевым креплением водоотливные и фекальные</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat31 in cat31 %}
+	<a href="/product/{{cat31.id}}">
+		<div class="create-category-block" style="background-image: url({{cat31.img.url}});">
+			<div class="create-category-text">
+				{{ cat31.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+
+	<div class="headline">Эжекторы водоструйные переносные и переносные погружные</div>
+	<div class="line"></div>
+	<div class="create-category">
+	{% for cat32 in cat32 %}
+	<a href="/product/{{cat32.id}}">
+		<div class="create-category-block" style="background-image: url({{cat32.img.url}});">
+			<div class="create-category-text">
+				{{ cat32.name }}
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+</div>
+
+{% include 'footer.html' %}
+	
+{% endblock %}
+</body>
+</html>

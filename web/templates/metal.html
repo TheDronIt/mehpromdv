@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Мехпром ДВ</title>
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/create.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/include.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/web/css/bootstrap.css' %}">
+	<script src="{% static '/web/js/jQuery.js' %}"></script>
+	<script src="{% static '/web/js/bootstrap.js' %}"></script>
+	<script src="{% static '/web/js/carousel.js' %}"></script>
+
+</head>
+<body>
+{% block content %}
+
+{% include 'header.html' %}
+
+<div class="create">
+	<div class="headline" style="padding-top: 15px">Металлоконструкции и изделия из металла</div>
+	<div class="line"></div>
+	<div class="create-text">
+		Наш завод производит высококачественные металлоконструкции, так же вы можете предоставить свои чертежи. Покраска, отделка и монтаж электрооборудования является дополниельной опцией для наших заказчиков.<br>
+		Цена на каждый проект договорная, в зависимости от уровня и объема работы.<br><br>
+		<a style="color: gray; font-weight: bold;">*Есть возможность конструкторской доработки изделий (за отдельную плату).</a><br><br>
+		<b style="font-size: 24px;">Примеры металлоконструкций:</b>
+		<div class="create-image">
+			<div style="background-image: url({% static '/web/img/metal/met1.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met2.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met3.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met4.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met7.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met8.jpg' %});">
+			</div>
+		</div>
+		<div style="margin: 70px;"></div>
+		<b style="font-size: 24px;">Примеры изделий из металла:</b>
+		<div class="create-image">
+			<div style="background-image: url({% static '/web/img/metal/met5.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met6.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met9.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met10.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met11.jpg' %});">
+			</div>
+			<div style="background-image: url({% static '/web/img/metal/met12.jpg' %});">
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div class="headline" style="padding-top: 15px">Связаться</div>
+<div class="line"></div>
+	<div class="create-contact">
+		Появился вопрос или есть желание воспользоваться услугой?<br>
+		Перейдите по ссылке, что бы получить всю нужную информацию.
+	</div>
+	<a href="/contact" style="text-decoration: none;">
+		<div class="create-button">
+			Перейти
+		</div>
+	</a>
+
+{% include 'footer.html' %}
+	
+{% endblock %}
+</body>
+</html>
